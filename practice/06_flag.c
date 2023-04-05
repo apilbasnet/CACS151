@@ -3,14 +3,14 @@
 int main() {
     int i, j;
 
-    for (size_t i = 0; i < 20; i++) {
-        for (size_t j = 0; j < i; j++) {
+    for ( i = 0; i < 20; i++) {
+        for ( j = 0; j < i; j++) {
             printf(" * ");
         }
         printf("\n");
     }
 
-    for (size_t i = 0; i < 10; i++) {
+    for ( i = 0; i < 10; i++) {
         printf(" *  *\n");
     }
     
