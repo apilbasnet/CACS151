@@ -1,4 +1,17 @@
 #include<stdio.h>
+#include<math.h>
+
+int digitcount(int n){
+    int count = 0;
+    while (n>0)
+    {
+        count++;
+        n/=10;
+
+    }
+    return count;
+
+}
 
 int main() {
     int n, c = 0, i, j, sum = 0;
@@ -7,12 +20,15 @@ int main() {
     scanf("%d", &n);
 
     i = n;
+    c = digitcount(n);
+
+        
 
     while(n > 0) {
-        // count digits
-        c++;
-        j = n % 10;
-        sum += j * j * j;
+        
+       
+        j = n % 10; 
+        sum += pow(j,c);
         n /= 10;
     }
 
